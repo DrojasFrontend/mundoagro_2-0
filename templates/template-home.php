@@ -28,9 +28,7 @@ get_header('nuevo');
     <?php get_template_part('template-parts/home/section', 'news')?>
     <!-- End News -->
 
-    <!-- Magazine -->
-    <?php get_template_part('template-parts/home/section', 'magazine')?>
-    <!-- End Magazine -->
+    
   </main>
 <!-- CONTENT -->
 
