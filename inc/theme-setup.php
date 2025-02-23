@@ -1,4 +1,7 @@
 <?php
+
+define('SITE_NAME', get_bloginfo('name'));
+
 /* 
 * Guarda archivos JSON de ACF en la carpeta '/acf-json' dentro del tema activo.
 */

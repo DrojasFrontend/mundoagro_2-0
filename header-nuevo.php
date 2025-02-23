@@ -17,6 +17,10 @@
   <!-- wordpress header includes -->
   <?php wp_head(); ?>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Noto+Sans+JP:wght@500;700&family=Oswald:wght@500&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body <?php body_class(); ?>>
 

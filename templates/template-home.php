@@ -15,7 +15,7 @@ get_header('nuevo');
 <!-- CONTENT -->
 <main>
   <!-- News -->
-  <?php get_template_part('template-parts/home/section', 'news') ?>
+  <?php get_template_part('template-parts/home/section', 'noticias') ?>
   <!-- End News -->
 
   <!-- Congresses -->

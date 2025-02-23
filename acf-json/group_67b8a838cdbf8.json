@@ -1,10 +1,10 @@
 {
     "key": "group_67b8a838cdbf8",
-    "title": "Inicio",
+    "title": "Página Inicio - Mundoagro",
     "fields": [
         {
-            "key": "field_67b8a8398cba0",
-            "label": "Noticias Destacadas",
+            "key": "field_67bb3a004816d",
+            "label": "Noticias destacadas",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -21,9 +21,9 @@
             "selected": 0
         },
         {
-            "key": "field_67b9f33e1d4f8",
-            "label": "Grupo Noticias",
-            "name": "grupo_noticias",
+            "key": "field_67bb3a124816e",
+            "label": "Grupo",
+            "name": "grupo_destacados",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -37,11 +37,11 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_67b8a906592fc",
-                    "label": "Noticias Destacadas",
-                    "name": "noticias_destacadas",
+                    "key": "field_67bb3b0868cdc",
+                    "label": "Noticias",
+                    "name": "noticias",
                     "aria-label": "",
-                    "type": "repeater",
+                    "type": "post_object",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -50,20 +50,55 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "table",
-                    "pagination": 0,
-                    "min": 0,
-                    "max": 0,
-                    "collapsed": "",
-                    "button_label": "Add Row",
-                    "rows_per_page": 20,
+                    "post_type": [
+                        "post"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "object",
+                    "multiple": 1,
+                    "allow_null": 0,
+                    "ui": 1
+                },
+                {
+                    "key": "field_67bb80fec3661",
+                    "label": "Papel Digital",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_67bb813c86744",
+                    "label": "Grupo",
+                    "name": "grupo_papel_digital",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_67b8ac3bcb118",
-                            "label": "Noticias",
-                            "name": "noticias",
+                            "key": "field_67bb815486745",
+                            "label": "Imagen",
+                            "name": "imagen",
                             "aria-label": "",
-                            "type": "post_object",
+                            "type": "image",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -72,27 +107,45 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": [
-                                "post"
-                            ],
-                            "post_status": "",
-                            "taxonomy": [
-                                "category:noticias"
-                            ],
-                            "return_format": "object",
-                            "multiple": 1,
-                            "allow_null": 0,
-                            "ui": 1,
-                            "parent_repeater": "field_67b8a906592fc"
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_67bb815f86746",
+                            "label": "CTA",
+                            "name": "cta",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
                         }
                     ]
                 },
                 {
-                    "key": "field_67ba700406cf9",
-                    "label": "Revista Destacada",
-                    "name": "revista",
+                    "key": "field_67bb9845ac3ef",
+                    "label": "ADS PRO",
+                    "name": "",
                     "aria-label": "",
-                    "type": "wysiwyg",
+                    "type": "tab",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -101,16 +154,86 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
+                    "placement": "top",
+                    "endpoint": 0
                 },
                 {
-                    "key": "field_67ba76e0b460b",
-                    "label": "Imagen Publicidad",
-                    "name": "imagen_publicidad",
+                    "key": "field_67bb9852ac3f0",
+                    "label": "Grupo ADS",
+                    "name": "grupo_ads",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_67bb9861ac3f1",
+                            "label": "ads",
+                            "name": "ads",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_67bba401d40dc",
+            "label": "Congresos",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_67bba4b9d40dd",
+            "label": "Grupo",
+            "name": "grupo_congresos",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_67bba4c7d40de",
+                    "label": "Imagen",
+                    "name": "imagen",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -121,7 +244,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
+                    "return_format": "array",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -131,6 +254,106 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium"
+                },
+                {
+                    "key": "field_67bba4d1d40df",
+                    "label": "Titulo",
+                    "name": "titulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67bba4d7d40e0",
+                    "label": "Descripción",
+                    "name": "descripcion",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_67bba4e7d40e1",
+                    "label": "Fecha",
+                    "name": "fecha",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67bba4fed40e2",
+                    "label": "Ubicación",
+                    "name": "ubicacion",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67bba507d40e3",
+                    "label": "CTA",
+                    "name": "cta",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         }
@@ -153,5 +376,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1740319053
+    "modified": 1740350813
 }
