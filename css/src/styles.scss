@@ -155,11 +155,11 @@ table {
 }
 
 body {
-  font-family: "Gilda Display", serif;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  background: #F1F3F1!important;
+	font-family: "Gilda Display", serif;
+	margin: 0;
+	padding: 0;
+	@extend .bg-gray-100;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -167,7 +167,8 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0 !important;
+	margin: 0 !important;
+	line-height: normal;
 }
 
 p {
