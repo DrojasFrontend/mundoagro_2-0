@@ -159,6 +159,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+  background: #F1F3F1!important;
 }
 
 h1,
@@ -208,5 +209,52 @@ strong {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 7;
+  overflow: hidden;
+}
+
+.titulo-linea {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.linea {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.punto {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.barra {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.recent-featured-news {
+  border-right: 1px solid #ccc;
+}
+
+.container-recent-news > div:last-child .recent-featured-news {
+  border: none;
+}
+
+.recent-featured-news p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.recent-featured-news h4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }

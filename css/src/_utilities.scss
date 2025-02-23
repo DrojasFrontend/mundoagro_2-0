@@ -148,6 +148,7 @@ $utilities: (
     class: h,
     values: (
       119: 119px,
+      234: 234px,
       100: 100%,
       auto: auto,
     ),
@@ -162,5 +163,39 @@ $utilities: (
     property: font-weight,
     class: fw,
     values: $font-weights,
+  ),
+  "border-radius": (
+    responsive: true,
+    property: border-radius,
+    class: rounded,
+    values: (
+      0: 0,
+      sm: 0.2rem,
+      md: 0.25rem,
+      lg: 0.375rem,
+      xl: 0.5rem,
+      "2xl": 0.75rem,
+      "3xl": 1rem,
+      full: 9999px,
+    ),
+  ),
+  "shadow": (
+    property: box-shadow,
+    class: shadow,
+    values: (
+      none: none,
+      card: 0px 2px 5px 0px rgba(0, 0, 0, 0.75),
+    ),
+  ),
+  "text-align": (
+    responsive: false,
+    property: text-align,
+    class: text,
+    values: (
+      left: left,
+      center: center,
+      right: right,
+      justify: justify,
+    ),
   ),
 );

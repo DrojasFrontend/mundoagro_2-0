@@ -1,15 +1,18 @@
-<section>
+<?php
+// Obtener las noticias destacadas del campo repetidor
+
+$grupo_noticias = get_field("grupo_noticias");
+$noticias_destacadas = $grupo_noticias["noticias_destacadas"];
+$imagen_publicidad = $grupo_noticias["imagen_publicidad"];
+?>
+
+<section class="mb-50">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-9">
         <div class="col-12">
           <div class="row">
             <?php
-            // Obtener las noticias destacadas del campo repetidor
-            
-            $grupo_noticias = get_field("grupo_noticias");
-            $noticias_destacadas = $grupo_noticias["noticias_destacadas"];
-
 
             // Verificar que existen noticias y procesar la primera noticia
             if ($noticias_destacadas) {
@@ -31,8 +34,8 @@
               }
               ?>
               <!-- Imagen del primer post -->
-              <article class="d-flex gap-18 main-featured-news-"> 
-                <div class="col-12 col-lg-6">
+              <article class="d-flex gap-18 main-featured-news-">
+                <div class="col-12 col-lg-6 mb-8">
                   <a href="<?php echo esc_url($url_noticia); ?>">
                     <img src="<?php echo esc_url($imagen); ?>" class="img-fluid" alt="">
                   </a>
@@ -105,12 +108,12 @@
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <?php get_template_part('template-parts/home/section', 'magazine'); ?>
+            <?php get_template_part('template-parts/home/section', 'magazine') ?>
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-3">
-        <img src="http://mundoagrodev.local/wp-content/uploads/2025/02/banners.png" class="img-fluid" alt="Banner">
+        <img src="<?php echo esc_url($imagen_publicidad); ?>" class="img-fluid" alt="Banner">
       </div>
     </div>
   </div>

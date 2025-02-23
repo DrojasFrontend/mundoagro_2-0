@@ -1,2 +1,6 @@
+<?php
+$grupo_noticias = get_field("grupo_noticias");
+$revista_destacada = $grupo_noticias["revista"];
+?>
 
-  <img src="http://mundoagrodev.local/wp-content/uploads/2025/02/image-6.png" class="img-fluid" alt="">
+<?php echo ($revista_destacada); ?>
