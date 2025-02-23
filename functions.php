@@ -10,6 +10,7 @@ define('THEME_URL', get_template_directory_uri());
 define('THEME_IMG', THEME_URL . '/images/');
 
 require_once THEME_PATH . '/inc/styles-and-js.php';
+require_once THEME_PATH . '/inc/theme-setup.php';
 /* Mundoagro */
 
 if ( ! defined( '_S_VERSION' ) ) {
