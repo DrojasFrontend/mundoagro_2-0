@@ -60,5 +60,3 @@ $items                = !empty($grupo_papel_digital['items']) ? $grupo_papel_dig
     </div>
   </div>
 </section>
-
-<section></section>
