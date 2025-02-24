@@ -511,6 +511,7 @@ button.swiper-pagination-bullet {
 /*!******************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./css/src/main.scss ***!
   \******************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 /* Brackpoint */
 /* Containrer */
 /* Colores */
@@ -3141,7 +3142,7 @@ textarea.form-control-lg {
   display: inline-block !important;
 }
 
-.d-block, .swiper-initialized {
+.d-block, .swiperPapelDigital .swiper-slide-active .textoFlotante, .swiper-initialized {
   display: block !important;
 }
 
@@ -4168,6 +4169,14 @@ textarea.form-control-lg {
   overflow: inherit !important;
 }
 
+.right-0 {
+  right: 0 !important;
+}
+
+.right-auto {
+  right: auto !important;
+}
+
 @media (min-width: 576px) {
   .d-sm-none {
     display: none !important;
@@ -4876,6 +4885,12 @@ textarea.form-control-lg {
   }
   .overflow-sm-inherit {
     overflow: inherit !important;
+  }
+  .right-sm-0 {
+    right: 0 !important;
+  }
+  .right-sm-auto {
+    right: auto !important;
   }
 }
 @media (min-width: 768px) {
@@ -5587,6 +5602,12 @@ textarea.form-control-lg {
   .overflow-md-inherit {
     overflow: inherit !important;
   }
+  .right-md-0 {
+    right: 0 !important;
+  }
+  .right-md-auto {
+    right: auto !important;
+  }
 }
 @media (min-width: 1024px) {
   .d-lg-none {
@@ -6296,6 +6317,12 @@ textarea.form-control-lg {
   }
   .overflow-lg-inherit {
     overflow: inherit !important;
+  }
+  .right-lg-0 {
+    right: 0 !important;
+  }
+  .right-lg-auto {
+    right: auto !important;
   }
 }
 @media (min-width: 1200px) {
@@ -7007,6 +7034,12 @@ textarea.form-control-lg {
   .overflow-xl-inherit {
     overflow: inherit !important;
   }
+  .right-xl-0 {
+    right: 0 !important;
+  }
+  .right-xl-auto {
+    right: auto !important;
+  }
 }
 @media (min-width: 1440px) {
   .d-xxl-none {
@@ -7717,6 +7750,12 @@ textarea.form-control-lg {
   .overflow-xxl-inherit {
     overflow: inherit !important;
   }
+  .right-xxl-0 {
+    right: 0 !important;
+  }
+  .right-xxl-auto {
+    right: auto !important;
+  }
 }
 /* Reset */
 *,
@@ -7974,19 +8013,19 @@ strong {
   background-repeat: no-repeat;
 }
 .icono-flecha {
-  background-image: url(../../dadde43a8e2d8bde1dc1.svg);
+  background-image: url(../../952272cbdc24c1f76069.svg);
 }
 .icono-calendario {
-  background-image: url(../../9a3da08a68f9984c07ec.svg);
+  background-image: url(../../8c7e3d9eb3360aed9617.svg);
 }
 .icono-ubicacion {
-  background-image: url(../../5d79f646026cc865a78a.svg);
+  background-image: url(../../4284bcadb4eb8a8dc410.svg);
 }
 .icono-hora {
-  background-image: url(../../52909e1cebb9e9a8cc9f.svg);
+  background-image: url(../../2dad04d7eb7a908d5a96.svg);
 }
 .icono-usuario {
-  background-image: url(../../5d9ba9ea9ddda232eb08.svg);
+  background-image: url(../../388d489035b5b139d9a3.svg);
 }
 
 .titulo-linea {
@@ -8035,3 +8074,72 @@ strong {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
+
+.linea {
+  display: flex;
+  align-items: center;
+}
+
+.barra {
+  position: relative;
+  flex-grow: 1;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.barra::before,
+.barra::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.barra::before {
+  left: 0;
+}
+
+.barra::after {
+  right: 0;
+}
+
+/* swiperPapelDigital */
+.swiperPapelDigital .swiper-wrapper {
+  align-items: flex-end;
+}
+
+.slide-img {
+  width: 80%; /* Tamaño base */
+  height: auto;
+  max-width: 100%;
+}
+
+/* Imagen activa se agranda */
+.swiperPapelDigital .swiper-slide-active {
+  opacity: 1;
+  width: 400px !important;
+}
+
+.textoFlotante {
+  position: absolute;
+  right: -150px;
+  text-align: left;
+}
+
+.swiperPapelDigital .swiper-slide {
+  text-align: center;
+}
+
+.swiperPapelDigital .swiper-slide-active .slide-img {
+  width: 100%; /* Se hace más grande sin recortar */
+}
+
+.swiperPapelDigital .swiper-button-lock {
+  display: block !important;
+}
+
+/* swiperPapelDigital */

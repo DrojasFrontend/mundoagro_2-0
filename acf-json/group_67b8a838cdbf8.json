@@ -273,6 +273,27 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
+                            "key": "field_67bca7137a16f",
+                            "label": "Titulo",
+                            "name": "titulo_revista",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_67bbeb59a6823"
+                        },
+                        {
                             "key": "field_67bbeb96a6824",
                             "label": "Imagen",
                             "name": "imagen",
@@ -299,9 +320,47 @@
                             "parent_repeater": "field_67bbeb59a6823"
                         },
                         {
+                            "key": "field_67bca72f7a170",
+                            "label": "Fecha",
+                            "name": "fecha",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_67bbeb59a6823"
+                        },
+                        {
                             "key": "field_67bbeba0a6825",
                             "label": "CTA",
                             "name": "cta",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "parent_repeater": "field_67bbeb59a6823"
+                        },
+                        {
+                            "key": "field_67bca7527a171",
+                            "label": "Link Compra",
+                            "name": "link_compra",
                             "aria-label": "",
                             "type": "link",
                             "instructions": "",
@@ -857,5 +916,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1740369039
+    "modified": 1740417458
 }

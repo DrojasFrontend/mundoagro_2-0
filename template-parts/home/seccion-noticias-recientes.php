@@ -5,16 +5,23 @@ $titulo                   = !empty($grupo_noticias_recientes['titulo']) ? esc_ht
 
 <section class="mb-100">
     <div class="container">
-        <?php if($titulo) { ?>
-          <h2 class="fs-2 text-black fw-bold mb-18"><?php echo $titulo; ?></h2>
-        <?php } ?>
+        <div class="d-flex">
+            <?php if($titulo) { ?>
+            <h2 class="fs-2 text-black fw-bold mb-18"><?php echo $titulo; ?></h2>
+            <?php } ?>
+            <!-- Linea -->
+            <?php get_template_part('template-parts/home/seccion', 'linea') ?>
+            <!-- Fin Linea -->
+        </div>
+        
+        
         <div class="d-grid grid-cols-4 gap-18">
             <?php
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 4,
                 'orderby' => 'date',
-                'order' => 'DESC'
+                'order' => 'ASC'
             );
     
             $query = new WP_Query($args);

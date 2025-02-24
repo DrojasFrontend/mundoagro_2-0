@@ -32,3 +32,4 @@ export const initClickableCards = (cardSelector) => {
 		e.stopPropagation();
 	});
 };
+
