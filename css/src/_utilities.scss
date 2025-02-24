@@ -169,22 +169,16 @@ $utilities: (
 		property: border-radius,
 		class: rounded,
 		values: (
+			null: 12px,
 			0: 0,
-			sm: 0.2rem,
-			md: 0.25rem,
-			lg: 0.375rem,
-			xl: 0.5rem,
-			"2xl": 0.75rem,
-			"3xl": 1rem,
-			full: 9999px,
+			4: 4px,
 		),
 	),
 	"shadow": (
 		property: box-shadow,
 		class: shadow,
 		values: (
-			none: none,
-			card: 0px 2px 5px 0px rgba(0, 0, 0, 0.75),
+			null: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
 		),
 	),
 	"text-align": (
@@ -213,4 +207,40 @@ $utilities: (
 				none: none,
 			),
 		),
+	"align-items": (
+		responsive: true,
+		property: align-items,
+		class: align,
+		values: (
+			start: flex-start,
+			end: flex-end,
+			center: center,
+			baseline: baseline,
+			stretch: stretch,
+		),
+	),
+	"justify-content": (
+		responsive: true,
+		property: justify-content,
+		class: justify,
+		values: (
+			start: flex-start,
+			end: flex-end,
+			center: center,
+			between: space-between,
+			around: space-around,
+		),
+	),
+	"position": (
+		responsive: true,
+		property: position,
+		class: position,
+		values: (
+			static: static,
+			relative: relative,
+			absolute: absolute,
+			fixed: fixed,
+			sticky: sticky,
+		),
+	),
 );

@@ -23,7 +23,9 @@ $container-max-widths: (
 /* Colores */
 $custom-colors: (
   "yellow-100": rgb(255, 232, 179),
+  "yellow-900": rgb(178, 127, 7),
   "gray": rgb(226, 226, 226),
+  "gray-50": rgb(246 246 246),
   "gray-100": rgb(241, 243, 241),
   "green": rgb(1, 121, 59),
   "black-25": rgba(0, 0, 0, 0.25),
@@ -34,7 +36,9 @@ $custom-colors: (
 
 $spacers: (
   0: 0,
+  4: 0.25rem,
   8: 0.5rem,
+  14: 0.875rem,
   18: 1.125rem,
   24: 1.5rem,
   50: 3.125rem,

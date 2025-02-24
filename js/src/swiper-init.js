@@ -5,20 +5,20 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-export const initServiciosSwiper = () => {
-	const swiper = new Swiper(".serviciosSwiper", {
+export const initSwiperCursos = () => {
+	const swiper = new Swiper(".swiperCursos", {
 		modules: [Pagination, Navigation],
 		slidesPerView: "auto",
 		spaceBetween: 36,
 		centeredSlides: false,
 		navigation: {
-			nextEl: ".swiper-button-next-not",
-			prevEl: ".swiper-button-prev-not",
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
 			clickable: true,
 			disabledClass: "swiper-nav-disabled",
 		},
 		pagination: {
-			el: ".swiper-pagination-ser",
+			el: ".swiper-pagination",
 			type: "bullets",
 			clickable: true,
 		},
@@ -32,35 +32,11 @@ export const initServiciosSwiper = () => {
 				spaceBetween: 20,
 			},
 			1280: {
-				slidesPerView: 4.5,
-				spaceBetween: 20,
-			},
-			1366: {
-				slidesPerView: 4.5,
-				spaceBetween: 36,
-			},
-		},
-		on: {
-			init: function () {
-				updateServiciosFraction(this);
-			},
-			slideChange: function () {
-				updateServiciosFraction(this);
-			},
+				slidesPerView: 3,
+				spaceBetween: 18,
+			}
 		},
 	});
-
-	function updateServiciosFraction(swiper) {
-		const currentIndex = swiper.realIndex + 1;
-		const totalSlides = swiper.slides.length;
-		const fractionHtml = `
-			<span class="current">${currentIndex}</span>
-			<span class="separator">/</span>
-			<span class="total">${totalSlides}</span>
-		`;
-		document.querySelector(".swiper-fraction-ser") ? document.querySelector(".swiper-fraction-ser").innerHTML = fractionHtml : null;
-
-	}
 
 	function initHeightServicios() {
 		if ($(".serviciosSwiper").length) {

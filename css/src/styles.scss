@@ -189,53 +189,116 @@ strong {
 	font-weight: 700;
 }
 
+.swiper {
+	@extend .d-none;
+
+	&-initialized {
+		@extend .d-block;
+	}
+
+	&-pagination {
+		&-bullet {
+			width: 16px;
+			height: 16px;
+			@extend .bg-black;
+		}
+
+		&-blanco {
+			.swiper-pagination-bullet {
+				@extend .bg-white;
+			}
+		}
+
+		&-negro {
+			.swiper-pagination-bullet {
+				@extend .bg-black;
+			}
+		}
+	}
+}
+
+.container {
+	&-swiper {
+		max-width: 1240px;
+		margin: 0 auto;
+		padding: 0 8px;
+	}
+}
+
 .img-fluid,
 .img-thumbnail {
 	height: auto;
 	width: 100%;
 }
 
-.noticia {
-  &Destacada {
-    a {
-      line-height: 22px;
-    }
-  }
-  
-  &Destacadas {
-    h2,
-    .fs-p-small {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-  
-    h2 {
-      -webkit-line-clamp: 5;
-    }
-  
-    .fs-p-small {
-      -webkit-line-clamp: 6;
-    }
+.btn {
+	font-family: "Sintony", Arial, Helvetica, sans-serif;
+	@extend .py-14, .px-24, .rounded-4, .fw-bold;
+	&-primary {
+		@extend .bg-green, .text-white;
+	}
+}
 
-    img {
-      height: 139px !important;
-    }
-  
-    a {
-      line-height: 22px;
-      @extend .fs-p-small;
-    }
-  }
+.noticia {
+	&Destacada {
+		a {
+			line-height: 22px;
+		}
+	}
+
+	&Destacadas {
+		h2,
+		.fs-p-small {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+
+		h2 {
+			-webkit-line-clamp: 5;
+		}
+
+		.fs-p-small {
+			-webkit-line-clamp: 6;
+		}
+
+		img {
+			height: 139px !important;
+		}
+
+		a {
+			line-height: 22px;
+			@extend .fs-p-small;
+		}
+	}
 }
 
 .icono {
-  @extend .d-inline-block;
-  width: 24px;
-  height: 24px;
-  &-flecha {
-    background: url(../../images/iconos/icono-flecha.svg);
-  }
+	@extend .d-inline-block;
+	width: 24px;
+	height: 24px;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&-flecha {
+		background-image: url(../../images/iconos/icono-flecha.svg);
+	}
+
+	&-calendario {
+		background-image: url(../../images/iconos/icono-calendario.svg);
+	}
+
+	&-ubicacion {
+		background-image: url(../../images/iconos/icono-ubicacion.svg);
+	}
+
+	&-hora {
+		background-image: url(../../images/iconos/icono-hora.svg);
+	}
+
+	&-usuario {
+		background-image: url(../../images/iconos/icono-usuario.svg);
+	}
 }
 
 .titulo-linea {

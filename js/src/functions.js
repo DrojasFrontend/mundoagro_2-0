@@ -1,8 +1,8 @@
 import $ from "jquery";
 
 export const componentsToEqualize = [
-	".noticiaDestacada h2",
-	".noticiaDestacada .fs-p-small",
+	".noticiaDestacadas h2",
+	".noticiaDestacadas .fs-p-small",
 ];
 
 export function equalizeHeights(selector) {

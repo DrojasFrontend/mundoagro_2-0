@@ -14,17 +14,17 @@ get_header('nuevo');
 
 <!-- CONTENT -->
 <main>
-  <!-- News -->
-  <?php get_template_part('template-parts/home/section', 'noticias') ?>
-  <!-- End News -->
+  <!-- Noticias -->
+  <?php get_template_part('template-parts/home/seccion', 'noticias') ?>
+  <!-- Fin Noticias -->
 
-  <!-- Congresses -->
-  <?php get_template_part('template-parts/home/section', 'congresses') ?>
-  <!-- Congresses -->
+  <!-- Congresos -->
+  <?php get_template_part('template-parts/home/seccion', 'congresos') ?>
+  <!-- Fin Congresos -->
 
-  <!-- News Most Recent -->
-  <?php get_template_part('template-parts/home/section', 'most-recent') ?>
-  <!-- News Most Recent -->
+  <!-- Cursos -->
+  <?php get_template_part('template-parts/home/seccion', 'cursos') ?>
+  <!-- Fin Cursos -->
 
 </main>
 <!-- CONTENT -->

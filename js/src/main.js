@@ -1,5 +1,8 @@
 import {} from "bootstrap";
 import $ from "jquery";
+import {
+	initSwiperCursos,
+} from "./swiper-init";
 import { equalizeHeights, componentsToEqualize } from "./functions.js";
 
 let Main = {
@@ -7,6 +10,10 @@ let Main = {
 		$(document).ready(() => {
 			this.initComponents();
 			this.initEventListeners();
+
+			if (document.querySelector(".swiperCursos")) {
+				initSwiperCursos();
+			}
 		});
 	},
 
