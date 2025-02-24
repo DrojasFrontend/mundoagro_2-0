@@ -28,7 +28,8 @@ $utilities: (
 			2: $h2-font-size,
 			3: $h3-font-size,
 			4: $h4-font-size,
-			p: $p-font-size,
+			p-large: $p-font-large,
+			p-medium: $p-font-medium,
 			p-small: $p-font-small,
 		),
 	),
@@ -178,7 +179,7 @@ $utilities: (
 		property: box-shadow,
 		class: shadow,
 		values: (
-			null: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+			card: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
 		),
 	),
 	"text-align": (

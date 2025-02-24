@@ -13,10 +13,10 @@ $cursos             = !empty($grupo_cursos['cursos']) ? $grupo_cursos['cursos'] 
 <section class="mb-100">
   <div class="container">
     <?php if($titulo) { ?>
-      <h2 class="fs-2 text-black fw-bold"><?php echo $titulo; ?></h2>
+      <h2 class="fs-2 text-black fw-bold wow fadeIn animated"><?php echo $titulo; ?></h2>
     <?php } ?>
 
-    <div class="row mb-18">
+    <div class="row mb-18 wow fadeIn animated">
       <div class="col-12 col-lg-9 d-flex align-center">
         <?php if($descripcion) { ?>
           <p class="fs-4 text-gray-500 mb-0"><?php echo $descripcion; ?></p>
@@ -27,7 +27,7 @@ $cursos             = !empty($grupo_cursos['cursos']) ? $grupo_cursos['cursos'] 
       </div>
     </div>
   </div>
-  <div class="container-swiper position-relative">
+  <div class="container-swiper position-relative wow fadeIn animated">
     <div class="swiper swiperCursos px-8">
       <div class="swiper-wrapper">
         <?php foreach ($cursos as $key => $curso) { 
@@ -38,12 +38,12 @@ $cursos             = !empty($grupo_cursos['cursos']) ? $grupo_cursos['cursos'] 
           $clases     = !empty($curso['clases']) ? esc_html($curso['clases']) : '';
           $hora       = !empty($curso['hora']) ? esc_html($curso['hora']) : '';
     
-          $cta        = !empty($curso['cta']) ? $curso['cta'] : '';
+          $cta        = !empty($curso['cta']) ? $curso['cta'] : [];
           $cta_url    = !empty($cta['url']) ? esc_url($cta['url']) : '';
           $cta_target = !empty($cta['target']) ? $cta['target'] : '';
         ?>
           <div class="swiper-slide pb-8">
-            <a href="<?php echo $cta_url; ?>" class="d-block p-8 bg-white rounded shadow" title="<?php echo $titulo; ?>" target="<?php echo $cta_target; ?>">
+            <a href="<?php echo $cta_url; ?>" class="d-block p-8 bg-white rounded shadow-card" title="<?php echo $titulo; ?>" target="<?php echo $cta_target; ?>">
               <?php echo generar_image_responsive($imagen_id, 'custom-size', SITE_NAME, 'd-flex img-fluid'); ?>
               
               <div class="px-18 py-8">

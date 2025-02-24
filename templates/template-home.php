@@ -8,7 +8,7 @@
 if (!defined('ABSPATH')) {
   exit;
 }
-get_header('nuevo');
+get_header();
 
 ?>
 
@@ -38,4 +38,4 @@ get_header('nuevo');
 <!-- CONTENT -->
 
 
-<?php get_footer('nuevo'); ?>
+<?php get_footer(); ?>

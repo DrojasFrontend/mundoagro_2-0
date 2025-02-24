@@ -11,7 +11,7 @@ $grupo_ads                = !empty($grupo_destacados['grupo_ads']) ? $grupo_dest
 $ads                      = !empty($grupo_ads['ads']) ? $grupo_ads['ads'] : '';
 ?>
 
-<section class="mb-100">
+<section class="my-100">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-12 col-xl-9">
@@ -22,7 +22,7 @@ $ads                      = !empty($grupo_ads['ads']) ? $grupo_ads['ads'] : '';
           $contenido_principal  = get_post_field('post_content', $noticia_principal->ID);
           $imagen_principal     = get_the_post_thumbnail($noticia_principal->ID, 'full', array('class' => 'w-100 h-100 object-fit-cover'));
         ?>
-        <article class="row mb-18">
+        <article class="row mb-18 wow fadeIn animated">
           <div class="col-12 col-lg-6 pe-xl-0">
             <div class="w-100 h-100 overflow-hidden mb-8">
               <?php echo $imagen_principal; ?>
@@ -35,7 +35,7 @@ $ads                      = !empty($grupo_ads['ads']) ? $grupo_ads['ads'] : '';
                 echo wp_trim_words($titulo_principal_format, 30, ' (...)'); 
               ?>
             </h1>
-            <p class="fs-p">
+            <p class="fs-p-large">
               <?php echo wp_trim_words($contenido_principal, 40, ' (...)'); ?>
             </p>
             <a class="d-flex align-center font-titulo fs-p-small text-black" href="<?php echo $link_principal; ?>" title="<?php echo SITE_NAME; ?>">
@@ -55,11 +55,11 @@ $ads                      = !empty($grupo_ads['ads']) ? $grupo_ads['ads'] : '';
                 $imagen     = get_the_post_thumbnail($noticia->ID, 'full', array('class' => 'w-100 d-flex object-fit-cover'));
 
                 ?>
-                <article class="col-12 noticiaDestacadas">
+                <article class="noticiaDestacadas col-12 p-0 wow fadeIn animated">
                   <div class="w-100 overflow-hidden mb-8">
                     <?php echo $imagen; ?>
                   </div>
-                  <h2 class="fw-bold mb-18 text-black">
+                  <h2 class="fs-p-medium fw-bold mb-18 text-black">
                     <?php echo $titulo; ?>
                   </h2>
                   <div class="fs-p-small mb-24">

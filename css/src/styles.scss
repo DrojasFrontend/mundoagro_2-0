@@ -219,7 +219,7 @@ strong {
 
 .container {
 	&-swiper {
-		max-width: 1240px;
+		max-width: 1408px;
 		margin: 0 auto;
 		padding: 0 8px;
 	}
@@ -233,7 +233,7 @@ strong {
 
 .btn {
 	font-family: "Sintony", Arial, Helvetica, sans-serif;
-	@extend .py-14, .px-24, .rounded-4, .fw-bold;
+	@extend .d-inline-block, .py-14, .px-24, .rounded-4, .fw-bold;
 	&-primary {
 		@extend .bg-green, .text-white;
 	}
