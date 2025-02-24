@@ -1,10 +1,12 @@
 import {} from "bootstrap";
 import $ from "jquery";
+import WOW from "wow.js";
+import { initSwiperCursos, initSwiperPapelDigital } from "./swiper-init";
 import {
-	initSwiperCursos,
-	initSwiperPapelDigital,
-} from "./swiper-init";
-import { equalizeHeights, componentsToEqualize, initClickableCards } from "./functions.js";
+	equalizeHeights,
+	componentsToEqualize,
+	initClickableCards,
+} from "./functions.js";
 
 let Main = {
 	init: async function () {
@@ -22,6 +24,18 @@ let Main = {
 
 			initClickableCards(".clickeable");
 		});
+	},
+
+	initWow: function () {
+		const wow = new WOW({
+			boxClass: "wow",
+			animateClass: "animated",
+			offset: 0,
+			mobile: true,
+			live: true,
+		});
+		wow.init();
+		console.log("WOW.js initialized");
 	},
 
 	initComponents: function () {

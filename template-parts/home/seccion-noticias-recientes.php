@@ -7,7 +7,7 @@ $titulo                   = !empty($grupo_noticias_recientes['titulo']) ? esc_ht
     <div class="container">
         <div class="d-flex">
             <?php if($titulo) { ?>
-            <h2 class="fs-2 text-black fw-bold mb-18"><?php echo $titulo; ?></h2>
+            <h2 class="fs-2 text-black fw-bold mb-18 wow fadeIn animated"><?php echo $titulo; ?></h2>
             <?php } ?>
             <!-- Linea -->
             <?php get_template_part('template-parts/home/seccion', 'linea') ?>
@@ -34,11 +34,11 @@ $titulo                   = !empty($grupo_noticias_recientes['titulo']) ? esc_ht
                     $imagen = get_the_post_thumbnail(get_the_ID(), 'full', array('class' => 'w-100 d-flex object-fit-cover'));
                     ?>
                     
-                    <article class="col-12 noticiaRecientes clickeable">
+                    <article class="noticiaRecientes col-12 p-0 clickeable wow fadeIn animated">
                         <div class="w-100 overflow-hidden mb-8">
                             <?php echo $imagen; ?>
                         </div>
-                        <h2 class="fw-bold mb-18 text-black">
+                        <h2 class="fs-p-medium fw-bold mb-18 text-black">
                             <?php echo $titulo; ?>
                         </h2>
                         <div class="fs-p-small mb-24">

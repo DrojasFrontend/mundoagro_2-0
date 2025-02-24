@@ -218,11 +218,11 @@ strong {
 }
 
 .container {
-  &-swiper {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 8px;
-  }
+	&-swiper {
+		max-width: 1408px;
+		margin: 0 auto;
+		padding: 0 8px;
+	}
 }
 
 .img-fluid,
@@ -232,11 +232,11 @@ strong {
 }
 
 .btn {
-  font-family: "Sintony", Arial, Helvetica, sans-serif;
-  @extend .py-14, .px-24, .rounded-4, .fw-bold;
-  &-primary {
-    @extend .bg-green, .text-white;
-  }
+	font-family: "Sintony", Arial, Helvetica, sans-serif;
+	@extend .d-inline-block, .py-14, .px-24, .rounded-4, .fw-bold;
+	&-primary {
+		@extend .bg-green, .text-white;
+	}
 }
 
 .noticia {
