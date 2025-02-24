@@ -52,7 +52,7 @@ $cta_target         = !empty($cta['target']) ? $cta['target'] : '';
                         <?php endif; ?>
 
                         <div class="text-center">
-                            <a href="<?php echo $cta_url; ?>" class="btn btn-primary" target="<?php echo $cta_target; ?>"><?php echo $cta_url; ?></a>
+                            <a href="<?php echo $cta_url; ?>" class="btn btn-primary" target="<?php echo $cta_target; ?>"><?php echo $cta_titulo; ?></a>
                         </div>
                     </div>
                 </div>
