@@ -8,7 +8,7 @@ $fecha              = !empty($grupo_congresos['fecha']) ? esc_html($grupo_congre
 $lugar              = !empty($grupo_congresos['lugar']) ? esc_html($grupo_congresos['lugar']) : '';
 $cta                = !empty($grupo_congresos['cta']) ? $grupo_congresos['cta'] : [];
 $cta_url            = !empty($cta['url']) ? esc_url($cta['url']) : '';
-$cta_titulo         = !empty($cta['titulo']) ? esc_html($cta['titulo']) : '';
+$cta_titulo         = !empty($cta['title']) ? esc_html($cta['title']) : '';
 $cta_target         = !empty($cta['target']) ? $cta['target'] : '';
 ?>
 
@@ -52,7 +52,7 @@ $cta_target         = !empty($cta['target']) ? $cta['target'] : '';
                         <?php endif; ?>
 
                         <div class="text-center">
-                            <a href="#" class="btn btn-primary">Más información</a>
+                            <a href="<?php echo $cta_url; ?>" class="btn btn-primary" target="<?php echo $cta_target; ?>"><?php echo $cta_url; ?></a>
                         </div>
                     </div>
                 </div>
