@@ -8,11 +8,9 @@ $ver_mas_titulo     = !empty($ver_mas['title']) ? esc_html($ver_mas['title']) : 
 $ver_mas_url        = !empty($ver_mas['url']) ? esc_url($ver_mas['url']) : '';
 $ver_mas_target     = !empty($ver_mas['target']) ? $ver_mas['target'] : '';
 $cursos             = !empty($grupo_cursos['cursos']) ? $grupo_cursos['cursos'] : [];
-
-
 ?>
 
-<section>
+<section class="mb-100">
   <div class="container">
     <?php if($titulo) { ?>
       <h2 class="fs-2 text-black fw-bold"><?php echo $titulo; ?></h2>

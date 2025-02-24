@@ -24,7 +24,7 @@ $ads                      = !empty($grupo_ads['ads']) ? $grupo_ads['ads'] : '';
         ?>
         <article class="row mb-18">
           <div class="col-12 col-lg-6 pe-xl-0">
-            <div class="w-100 h-100">
+            <div class="w-100 h-100 overflow-hidden mb-8">
               <?php echo $imagen_principal; ?>
             </div>
           </div>
@@ -52,11 +52,11 @@ $ads                      = !empty($grupo_ads['ads']) ? $grupo_ads['ads'] : '';
                 $link       = get_permalink($noticia->ID);
                 $titulo     = get_the_title($noticia->ID);
                 $contenido  = get_post_field('post_content', $noticia->ID);
-                $imagen     = get_the_post_thumbnail($noticia->ID, 'full', array('class' => 'w-100 d-flex object-fit-cover mb-8'));
+                $imagen     = get_the_post_thumbnail($noticia->ID, 'full', array('class' => 'w-100 d-flex object-fit-cover'));
 
                 ?>
                 <article class="col-12 noticiaDestacadas">
-                  <div class="w-100">
+                  <div class="w-100 overflow-hidden mb-8">
                     <?php echo $imagen; ?>
                   </div>
                   <h2 class="fw-bold mb-18 text-black">

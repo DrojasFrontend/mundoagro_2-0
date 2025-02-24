@@ -3,7 +3,7 @@ import $ from "jquery";
 import {
 	initSwiperCursos,
 } from "./swiper-init";
-import { equalizeHeights, componentsToEqualize } from "./functions.js";
+import { equalizeHeights, componentsToEqualize, initClickableCards } from "./functions.js";
 
 let Main = {
 	init: async function () {
@@ -14,6 +14,8 @@ let Main = {
 			if (document.querySelector(".swiperCursos")) {
 				initSwiperCursos();
 			}
+
+			initClickableCards(".clickeable");
 		});
 	},
 

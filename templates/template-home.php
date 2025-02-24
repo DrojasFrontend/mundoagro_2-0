@@ -26,6 +26,10 @@ get_header('nuevo');
   <?php get_template_part('template-parts/home/seccion', 'cursos') ?>
   <!-- Fin Cursos -->
 
+  <!-- Noticias recientes -->
+  <?php get_template_part('template-parts/home/seccion', 'noticias-recientes') ?>
+  <!-- Fin Noticias recientes -->
+
 </main>
 <!-- CONTENT -->
 

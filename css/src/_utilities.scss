@@ -243,4 +243,13 @@ $utilities: (
 			sticky: sticky,
 		),
 	),
+	"overflow": (
+		responsive: true,
+		property: overflow,
+		class: overflow,
+		values: (
+			hidden: hidden,
+			inherit: inherit,
+		),
+	),
 );

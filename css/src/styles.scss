@@ -271,6 +271,32 @@ strong {
 			@extend .fs-p-small;
 		}
 	}
+
+	&Recientes {
+		h2,
+		.fs-p-small {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+
+		h2 {
+			-webkit-line-clamp: 5;
+		}
+
+		.fs-p-small {
+			-webkit-line-clamp: 6;
+		}
+
+		img {
+			height: 230px !important;
+		}
+
+		a {
+			line-height: 22px;
+			@extend .fs-p-small;
+		}
+	}
 }
 
 .icono {

@@ -3213,7 +3213,7 @@ textarea.form-control-lg {
   font-size: 1.25rem !important;
 }
 
-.fs-p-small, .noticiaDestacadas a {
+.fs-p-small, .noticiaRecientes a, .noticiaDestacadas a {
   font-size: 0.875rem !important;
 }
 
@@ -4160,6 +4160,14 @@ textarea.form-control-lg {
   position: sticky !important;
 }
 
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.overflow-inherit {
+  overflow: inherit !important;
+}
+
 @media (min-width: 576px) {
   .d-sm-none {
     display: none !important;
@@ -4862,6 +4870,12 @@ textarea.form-control-lg {
   }
   .position-sm-sticky {
     position: sticky !important;
+  }
+  .overflow-sm-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-sm-inherit {
+    overflow: inherit !important;
   }
 }
 @media (min-width: 768px) {
@@ -5567,6 +5581,12 @@ textarea.form-control-lg {
   .position-md-sticky {
     position: sticky !important;
   }
+  .overflow-md-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-md-inherit {
+    overflow: inherit !important;
+  }
 }
 @media (min-width: 1024px) {
   .d-lg-none {
@@ -6270,6 +6290,12 @@ textarea.form-control-lg {
   }
   .position-lg-sticky {
     position: sticky !important;
+  }
+  .overflow-lg-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-lg-inherit {
+    overflow: inherit !important;
   }
 }
 @media (min-width: 1200px) {
@@ -6975,6 +7001,12 @@ textarea.form-control-lg {
   .position-xl-sticky {
     position: sticky !important;
   }
+  .overflow-xl-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-xl-inherit {
+    overflow: inherit !important;
+  }
 }
 @media (min-width: 1440px) {
   .d-xxl-none {
@@ -7679,6 +7711,12 @@ textarea.form-control-lg {
   .position-xxl-sticky {
     position: sticky !important;
   }
+  .overflow-xxl-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-xxl-inherit {
+    overflow: inherit !important;
+  }
 }
 /* Reset */
 *,
@@ -7907,6 +7945,25 @@ strong {
   height: 139px !important;
 }
 .noticiaDestacadas a {
+  line-height: 22px;
+}
+.noticiaRecientes h2,
+.noticiaRecientes .fs-p-small,
+.noticiaRecientes a {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.noticiaRecientes h2 {
+  -webkit-line-clamp: 5;
+}
+.noticiaRecientes .fs-p-small, .noticiaRecientes a {
+  -webkit-line-clamp: 6;
+}
+.noticiaRecientes img {
+  height: 230px !important;
+}
+.noticiaRecientes a {
   line-height: 22px;
 }
 
