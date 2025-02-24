@@ -231,6 +231,26 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "key": "field_67bbec86f175a",
+                    "label": "Titulo",
+                    "name": "titulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_67bbeb59a6823",
                     "label": "Items",
                     "name": "items",
@@ -837,5 +857,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1740368842
+    "modified": 1740369039
 }

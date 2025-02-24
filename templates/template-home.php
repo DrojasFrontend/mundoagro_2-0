@@ -18,6 +18,10 @@ get_header('nuevo');
   <?php get_template_part('template-parts/home/seccion', 'noticias') ?>
   <!-- Fin Noticias -->
 
+  <!-- Papel Digital -->
+  <?php get_template_part('template-parts/home/seccion', 'papel-digital') ?>
+  <!-- Fin Papel Digital -->
+
   <!-- Congresos -->
   <?php get_template_part('template-parts/home/seccion', 'congresos') ?>
   <!-- Fin Congresos -->

@@ -2,6 +2,7 @@ import {} from "bootstrap";
 import $ from "jquery";
 import {
 	initSwiperCursos,
+	initSwiperPapelDigital,
 } from "./swiper-init";
 import { equalizeHeights, componentsToEqualize, initClickableCards } from "./functions.js";
 
@@ -13,6 +14,10 @@ let Main = {
 
 			if (document.querySelector(".swiperCursos")) {
 				initSwiperCursos();
+			}
+
+			if (document.querySelector(".swiperPapelDigital")) {
+				initSwiperPapelDigital();
 			}
 
 			initClickableCards(".clickeable");
