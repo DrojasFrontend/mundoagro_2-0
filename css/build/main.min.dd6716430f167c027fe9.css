@@ -8549,6 +8549,9 @@ strong {
 .icono-usuario {
   background-image: url(../../5d9ba9ea9ddda232eb08.svg);
 }
+.icono-carrito {
+  background-image: url(../../bc102557ca8ab4192e9d.png);
+}
 
 .linea {
   display: flex;

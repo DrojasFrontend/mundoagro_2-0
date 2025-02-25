@@ -251,6 +251,22 @@
                     "append": ""
                 },
                 {
+                    "key": "field_67bd2521bdaad",
+                    "label": "CTA",
+                    "name": "cta",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
                     "key": "field_67bbeb59a6823",
                     "label": "Items",
                     "name": "items",
@@ -273,11 +289,6 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
-<<<<<<< HEAD
-                            "key": "field_67bca7137a16f",
-                            "label": "Titulo",
-                            "name": "titulo_revista",
-=======
                             "key": "field_67bc70558ecbe",
                             "label": "Titulo",
                             "name": "titulo",
@@ -302,7 +313,6 @@
                             "key": "field_67bc70648ecbf",
                             "label": "Fecha",
                             "name": "fecha",
->>>>>>> 84d40bc4112f14736fae6b9d7b5333c894b59f52
                             "aria-label": "",
                             "type": "text",
                             "instructions": "",
@@ -347,47 +357,9 @@
                             "parent_repeater": "field_67bbeb59a6823"
                         },
                         {
-                            "key": "field_67bca72f7a170",
-                            "label": "Fecha",
-                            "name": "fecha",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "parent_repeater": "field_67bbeb59a6823"
-                        },
-                        {
                             "key": "field_67bbeba0a6825",
                             "label": "CTA",
                             "name": "cta",
-                            "aria-label": "",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "parent_repeater": "field_67bbeb59a6823"
-                        },
-                        {
-                            "key": "field_67bca7527a171",
-                            "label": "Link Compra",
-                            "name": "link_compra",
                             "aria-label": "",
                             "type": "link",
                             "instructions": "",
@@ -923,6 +895,86 @@
                     "append": ""
                 }
             ]
+        },
+        {
+            "key": "field_67bd26ac6e5b6",
+            "label": "ADS",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_67bd26be6e5b7",
+            "label": "Grupo",
+            "name": "grupo_ads",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_67bd26c96e5b8",
+                    "label": "Items",
+                    "name": "items",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_67bd26d76e5b9",
+                            "label": "ADS",
+                            "name": "ads",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "parent_repeater": "field_67bd26c96e5b8"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "location": [
@@ -943,9 +995,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-<<<<<<< HEAD
-    "modified": 1740417458
-=======
-    "modified": 1740402805
->>>>>>> 84d40bc4112f14736fae6b9d7b5333c894b59f52
+    "modified": 1740449513
 }

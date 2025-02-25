@@ -1,6 +1,11 @@
 <?php 
 $grupo_papel_digital  = get_field('grupo_papel_digital');
 $titulo               = !empty($grupo_papel_digital['titulo']) ? esc_html($grupo_papel_digital['titulo']) : '';
+$cta                  = !empty($grupo_papel_digital['cta']) ? $grupo_papel_digital['cta'] : [];
+$cta_url_principal    = !empty($cta['url']) ? esc_url($cta['url']) : '';
+$cta_titulo_principal = !empty($cta['title']) ? esc_html($cta['title']) : '';
+$cta_target_principal = !empty($cta['target']) ? $cta['target'] : '';
+
 $items                = !empty($grupo_papel_digital['items']) ? $grupo_papel_digital['items'] : [];
 ?>
 <section class="mb-100">
@@ -57,6 +62,12 @@ $items                = !empty($grupo_papel_digital['items']) ? $grupo_papel_dig
           </div>
         <?php } ?>
       </div>
+    </div>
+    <div class="mt-24">
+      <a class="d-flex align-center justify-end font-titulo text-black" href="<?php echo $cta_url_principal; ?>" target="<?php echo $cta_target_principal; ?>" title="<?php echo $cta_titulo_principal; ?>">
+        <?php echo $cta_titulo_principal; ?>
+        <i class="icono icono-flecha"></i>
+      </a>
     </div>
   </div>
 </section>

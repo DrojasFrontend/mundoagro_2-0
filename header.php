@@ -149,6 +149,9 @@
 
                 <!--HEADER tools-->
                 <div class="header-tools ml-auto d-flex">
+                    <a href="/tienda-revistas" class="me-18">
+                        <i class="icono icono-carrito"></i>
+                    </a>
                     <div class="ico-suscribete"><a href="/suscripcion-revista"><i class="mr-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="124" height="20" viewBox="0 0 124 20">
                             <g id="Grupo_662" data-name="Grupo 662" transform="translate(-483 -218)">

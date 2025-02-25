@@ -18,7 +18,7 @@ export const initSwiperCursos = () => {
 			disabledClass: "swiper-nav-disabled",
 		},
 		pagination: {
-			el: ".swiper-pagination",
+			el: ".swiper-pagination-cursos",
 			type: "bullets",
 			clickable: true,
 		},
